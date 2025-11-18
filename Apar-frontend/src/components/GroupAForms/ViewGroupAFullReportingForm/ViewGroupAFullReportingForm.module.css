@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 900px;
+}
+
+.sectionHeading {
+  font-size: 1.2rem;
+  color: #0d6efd;
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+}

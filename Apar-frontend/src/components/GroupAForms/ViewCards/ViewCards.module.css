@@ -1,0 +1,35 @@
+.cardBox {
+  border-radius: 14px;
+  padding: 18px;
+  background: #ffffff;
+
+  /* Darker, premium shadow */
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.18);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Premium Hover Effect */
+.cardBox:hover {
+  transform: translateY(-10px) scale(1.02);
+
+  /* Darker & wider hover shadow */
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.28);
+
+  cursor: pointer;
+}
+
+/* Title Styling */
+.cardTitle {
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: #084298;
+  margin-bottom: 12px;
+}
+
+/* Paragraph styling */
+.cardText p {
+  margin: 0;
+  font-size: 0.97rem;
+  color: #333;
+}

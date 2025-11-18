@@ -1,0 +1,166 @@
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff3b3b;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 2s ease-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* ----------------------------------------------------------
+   PRINT BUTTON STYLE
+-----------------------------------------------------------*/
+.printWrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.printButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.printButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ----------------------------------------------------------
+   GLOBAL PRINT RULES – HIDE BUTTONS DURING PRINT
+-----------------------------------------------------------*/
+@media print {
+  .printButton,
+  .hideOnPrint,
+  button,
+  .btn {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Remove page padding for better PDF output */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Popup style */
+.popup {
+  background-color: #ffeb3b;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ==== REMOVE BROWSER PRINT HEADERS & FOOTERS ==== */
+@page {
+  margin: 0; /* पूरी जगह हमारी UI लेगी */
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* ब्राउज़र के Header/Footer को हटाने के लिए */
+  @page {
+    size: auto;
+    margin: 0;
+  }
+
+  /* Submit & Print button hide */
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* SUCCESS POPUP CENTER */
+.popupCenter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #198754;
+  color: white;
+  padding: 16px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 9999;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -55%);
+  }
+}
+
+/* HIDE SUBMIT + PRINT IN PRINT-PDF */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

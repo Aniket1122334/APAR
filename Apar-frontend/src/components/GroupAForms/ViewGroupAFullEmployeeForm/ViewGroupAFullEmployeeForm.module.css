@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: 900px;
+  border-radius: 12px;
+}
+
+.sectionHeading {
+  color: #0d6efd;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.reviewBtn {
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.reviewBtn:hover {
+  background-color: #084298;
+}

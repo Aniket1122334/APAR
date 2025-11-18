@@ -1,0 +1,41 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #f8f9fa;
+}
+
+.leftSection {
+  width: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginImage {
+  width: 70%;
+  max-width: 350px;
+}
+
+.rightSection {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBox {
+  width: 80%;
+  max-width: 420px;
+  background: #ffffff;
+}
+
+.mainHeading {
+  text-align: center;
+  font-weight: 800;
+  color: #3a4cb7;
+  margin-bottom: 10px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
